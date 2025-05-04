@@ -1,8 +1,8 @@
 /*
 Name: Yaneli Castillo
-Date Created: April 8th, 2025
-Version: 3
-Description: Homework 3 - MIS 3371
+Date Created: April 30th, 2025
+Version: 4
+Description: Homework 4 - MIS 3371
 */
 
 //date js code
@@ -18,6 +18,20 @@ output.innerHTML = slider.value;
 slider.oninput = function () {
     output.innerHTML = this.value;
 };
+
+//scroll
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 //DOB validation js code
 function validateDob() {
