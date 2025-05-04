@@ -21,30 +21,26 @@ Description: Homework 4 - MIS 3371
 
     <body>
         <header>
-            <table width="100%">
-                <tr>
-                    <td valign="top" align="left" width="20%">
-                        <div class="image">
-                            <img align="center" src="cliniclogo.jpg"  alt="Clinic Logo" width="80px" id="logo"/>
-                        </div>
-                    </td>
-                    <td>
-                        <h2>Family Creek Clinic</h2>
-                    </td>
-                    
-                    <td valign="bottom" align="right" width="20%">
-                        <p>Today's Date: <span id="today"></span></p>
-                    </td>
-                </tr>
-            </table>
+          <table width="100%">
+            <tr>
+              <td valign="top" align="left" width="20%">
+                <div class="image">
+                  <img align="center" src="cliniclogo.jpg"  alt="Clinic Logo" width="80px" id="logo"/>
+                </div>
+              </td>
+              <td align="center"><h1>Family Creek Clinic</h1></td>
+              <td valign="bottom" align="right" width="20%">
+                <p>Today's Date: <span id="today"></span></p>
+              </td>
+            </tr>
+          </table>
+          <h2>Please fill out this form:</h2>
+          <div id="greeting" style="margin-bottom: 1rem; font-weight: bold"></div>
         </header>
         <hr>
 
         <form id="submit" name="submit" action="thx.html" onsubmit="return validateEmail() && validatePhone();">
             <center>
-                <div class="format">
-                    <h3 class="center-header">Patient Registration Form</h3>
-                    <div id="greeting" style="margin-bottom: 1rem; font-weight: bold"></div>
     
                     
         <div class="row">
@@ -406,9 +402,9 @@ Description: Homework 4 - MIS 3371
 </center>
 </form>
 
-<footer>
+<div class="footer">
     <p>&#169; 2025 Family Creek Clinic | <a href="contact.html">Contact Us!</a></p>
-</footer>
+</div>
 
 <script src="hw.js"></script>
 
