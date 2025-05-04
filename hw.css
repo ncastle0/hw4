@@ -1,12 +1,14 @@
 /*
 Name: Yaneli Castillo
-Date Created: April 8th, 2025
-Version: 3
-Description: Homework 3 - MIS 3371
+Date Created: April 30th, 2025
+Version: 4
+Description: Homework 4 - MIS 3371
 */
 
 header {
     width: 100%;
+    top: 0;
+    position: sticky;
     background-color: rgb(200, 247, 247);
     font-family: "optima", sans-serif;
 }
@@ -19,6 +21,16 @@ body{
     margin: 0;
     height: 100%;
     min-height: 100vh;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .row {
+    padding-top: 102px;
 }
 
 #logo{
@@ -57,11 +69,17 @@ body{
     margin-right: 5px;
 }
     
-#footer{
+.footer{
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(200, 247, 247);
+    color: black;
     text-align: center;
     font-family: "optima", sans-serif;
     font-weight: normal;
-    margin-right: 10px;
 }
 
     
